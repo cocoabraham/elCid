@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Título</title>
+      <meta name="description" content="Source code generated using layoutit.com">
+      <meta name="author" content="LayoutIt!">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700,700italic,400italic,900,900italic|Lato:400,300,700,900,300italic,400italic,700italic,900italic,100,100italic' rel='stylesheet' type='text/css'>
+      <link href="css/uikit.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/components/slideshow.css" />
+      <link rel="stylesheet" href="css/components/slidenav.css" />
+      <link rel="stylesheet" href="css/components/datepicker.css" />
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/bootstrap-select.min.css" rel="stylesheet">
+      <script src="js/classie.js"></script>
+      <script>
+         function init() {
+             window.addEventListener('scroll', function(e){
+                 var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                     shrinkOn = 400,
+                     header = document.querySelector("header");
+                 if (distanceY > shrinkOn) {
+                     classie.add(header,"smaller");
+                 } else {
+                     if (classie.has(header,"smaller")) {
+                         classie.remove(header,"smaller");
+                     }
+                 }
+             });
+         }
+         window.onload = init();
+      </script>
+   </head>
+   <body>
+      <!---search availability overlay--->
+      <!-- The overlay -->
+      <div id="search-availability" class="search-availability-overlay">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">
+            <div class="container">
+                <h1 class="txt-white font-size-200">BOOK A ROOM</h1>
+                <br>
+                <br>
+               <form class="form">
+                  <div class="form-group">
+                      <p class="label-block">Resort:</p>
+                     <label class="sr-only" for="qs-resort">Resort</label>
+                     <select class="selectpicker">
+                        <option>Select</option>
+                        <option>EL CID CASTILLA BEACH</option>
+                        <option>EL CID EL MORO BEACH</option>
+                        <option>EL CID EL MARINA BEACH</option>
+                        <option>EL CID GRANADA COUNTRY CLUB</option>
+                        <option>HOTEL MARINA EL CID SPA &amp; BEACH RESORT</option>
+                        <option>EL CID LA CEIBA BEACH</option>
+                     </select>
+                  </div>
+
+                   <div id="datepicker-container" class="form-group">
+                      <p class="label-block">Arrival date:</p>
+                     <label class="sr-only" for="qs-arrival">Select</label>
+                           <input data-uk-datepicker="{format:'DD-MM-YYYY',  minDate: 0}" ng-model="arrivaldate" readonly="readonly" value="" ng-change="change()" name="dpReservationQuickSearchArrivalDate" class="transparent ng-pristine ng-untouched ng-valid ng-empty" type="text" lang="en-US" placeholder="Select">
+                  </div>
+                  <div class="form-group">
+                      <p class="label-block">Nights:</p>
+                     <label class="sr-only" for="qs-nights">Nights</label>
+                     <select class="selectpicker">
+                        <option>Select</option>
+                        <option>1</option>
+                        <option>2</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                      <p class="label-block">Adults:</p>
+                     <label class="sr-only" for="qs-adults">Adults</label>
+                     <select class="selectpicker">
+                        <option>Select</option>
+                        <option>1</option>
+                        <option>2</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                      <p class="label-block">Children:</p>
+                     <label class="sr-only" for="qs-children">Children</label>
+                     <select class="selectpicker">
+                        <option>Select</option>
+                        <option>1</option>
+                        <option>2</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <button class="btn btn-default btn-gold btn-gold-fixed-size" type="submit">Search</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <!---top menu overlay--->
+      <div id="menu-1" class="search-availability-overlay">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+         <div class="overlay-content">
+            <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#reservaciones" onclick="closeNav1()">Destinations</a>
+            <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#cuenta" onclick="closeNav1()">Membership</a>
+            <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#promociones" onclick="closeNav1()">Promotions</a>
+            <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contacto" onclick="closeNav1()">Contact</a>
+         </div>
+      </div>
+      <div id="backtop">&#9650;</div>
+      <header>
+         <section id="Header">
+            <div id="User" class="container-full white-back2">
+               <div class="container1200">
+                  <div class="row">
+                     <div class="col-xs-2 height80 brand hidden-xs margin-top15">
+                        <a href="index.html">
+                           <div class="lrg-logo">&nbsp;</div>
+                        </a>
+                     </div>
+                     <div class="col-xs-1 height80 brand hidden-sm hidden-md hidden-lg margin-top15">
+                        <a href="index.html">
+                           <div class="sml-logo">&nbsp;</div>
+                        </a>
+                     </div>
+                     <div id="login" class="col-xs-10 text-right">
+                        <div class="">
+                           <ul class="list-inline hidden-md hidden-lg margin-top15">
+                              <li>
+                                 <div id="" class="prueba">
+                                    <button class="btn btn-default btn-gold btn-gold-fixed-size" type="submit" onclick="openNav()">Book a room</button>
+                                 </div>
+                              </li>
+
+                              <li class="show2">
+                                 <span class="pts-badge"><a href="#"><span class="glyphicon glyphicon-exclamation-sign pts-alert"></span></a>1000,000 pts</span>
+                              </li>
+
+                              <li class="show2">
+                                 <div>
+                                    <label class="sr-only" for="language">Language</label>
+                                    <select class="selectpicker">
+                                       <option>Eng</option>
+                                       <option>Esp</option>
+                                    </select>
+                                 </div>
+                              </li>
+
+                              <li>
+                                 <div class="menu-top">
+                                    <button class="btn btn-default btn-gold" type="submit" onclick="openNav1()">&#9776;</button>
+                                 </div>
+                              </li>
+                              <li>
+                                 <a href="#" class=""><span class="glyphicon glyphicon-log-out txt-grey"></span></a>
+                              </li>
+                           </ul>
+                            <ul class="list-inline hidden-xs hidden-sm">
+                              <li>
+                                 <span class="name txt-grey">Alejandro Ortíz 2</span>
+                              </li>
+                              <li>
+                                 <span class="name txt-grey">00000000001</span>
+                              </li>
+                               <li>
+                                 <span class="pts-badge"><a href="#"><span class="glyphicon glyphicon-exclamation-sign pts-alert"></span></a>1000,000 pts</span>
+                              </li>
+                              <li>
+                                 <div>
+                                    <label class="sr-only" for="language">Language</label>
+                                    <select class="selectpicker">
+                                       <option>Eng</option>
+                                       <option>Esp</option>
+                                    </select>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div id="" class="prueba">
+                                    <button class="btn btn-default btn-gold btn-gold-fixed-size" type="submit" onclick="openNav()">Book a room</button>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="menu-top">
+                                    <button class="btn btn-default btn-gold" type="submit" onclick="openNav1()">&#9776;</button>
+                                 </div>
+                              </li>
+                              <li>
+                                 <a href="#" class=""><span class="glyphicon glyphicon-log-out txt-grey"></span></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+            </div>
+            <div id="Menu" class="container-full menu-back show2">
+               <div class="container1200">
+                  <div class="row">
+                     <div class="col-xs-12 ">
+                        <nav role="navigation" class="navbar navbar-default ">
+                           <div class="navbar-header">
+                              <button data-target="#bs-example-navbar-collapse-1" onclick="openNav1()" class="navbar-toggle" type="button">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              </button>
+                           </div>
+                           <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                              <ul class="nav navbar-nav navbar-right">
+                                 <li>
+                                    <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#reservaciones">Destinations</a>
+                                 </li>
+                                 <li>
+                                    <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#cuenta">Membership</a>
+                                 </li>
+                                 <li>
+                                    <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#promociones">Promotions</a>
+                                 </li>
+                                 <li>
+                                    <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contacto">Contact</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </header>
+      <div id="Slider" class="container-full">
+         <div class="carousel slide" id="carousel-891944">
+            <ol class="carousel-indicators">
+               <li data-slide-to="0" data-target="#carousel-891944">
+               </li>
+               <li data-slide-to="1" data-target="#carousel-891944" class="active">
+               </li>
+               <li data-slide-to="2" data-target="#carousel-891944">
+               </li>
+            </ol>
+            <section id="search-bar">
+               <div class="mg-book-now">
+                  <div class="container">
+                     <div class="col-xs-12 padding-Y20 text-center">
+                        <button class="btn btn-default btn-gold btn-gold-fixed-size" type="submit" onclick="openNav()">Book a room</button>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="carousel-inner">
+               <div class="item active">
+                  <div class="fill" style="background-image:url('img/carrusel_01.jpg');"></div>
+               </div>
+               <div class="item">
+                  <div class="fill" style="background-image:url('img/carrusel_02.jpg');"></div>
+               </div>
+               <div class="item">
+                  <div class="fill" style="background-image:url('img/carrusel_03.jpg');"></div>
+               </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-891944" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-891944" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+         </div>
+      </div>
+      <section id="Content">
+         <div class="container1200 white-back shadow margin-bottom-50">
+            <div id="reservaciones" class="row">
+               <div class="Slide">
+                  <div class="dest-container">
+
+                        <div class="col-md-4 col-sm-6 text-center">
+                           <h2 class="dest-title">El Cid Castilla beach</h2>
+                           <h3>Mazatlán</h3>
+                           <div class="view view-first">
+                              <img src="img/dest_01.jpg" />
+                              <div class="mask">
+                                 <a href="reserva00.html" class="info">Book now</a>
+                                 </br>
+                                 <a href="#modal_dest_01" data-uk-modal class="info">Learn More</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 text-center">
+                           <h2 class="dest-title">El Cid El Moro Beach</h2>
+                           <h3>Mazatlán</h3>
+                           <div class="view view-first">
+                              <img src="img/dest_02.jpg" />
+                              <div class="mask">
+                                 <a href="reserva00.html" class="info">Book now</a>
+                                 </br>
+                                 <a href="#modal_dest_02" data-uk-modal class="info">Learn More</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 text-center">
+                           <h2 class="dest-title">El Cid Marina Beach</h2>
+                           <h3>Mazatlán</h3>
+                           <div class="view view-first">
+                              <img src="img/dest_03.jpg" />
+                              <div class="mask">
+                                 <a href="reserva00.html" class="info">Book now</a>
+                                 </br>
+                                 <a href="#modal_dest_03" data-uk-modal class="info">Learn More</a>
+                              </div>
+                           </div>
+                        </div>
+<div class="clear hidden-sm hidden-xs"></div>
+
+                        <div class="col-md-4 col-sm-6 text-center">
+                           <h2 class="dest-title">El Cid Granada Country Club</h2>
+                           <h3>Mazatlán</h3>
+                           <div class="view view-first">
+                              <img src="img/dest_04.jpg" />
+                              <div class="mask">
+                                 <a href="reserva00.html" class="info">Book now</a>
+                                 </br>
+                                 <a href="#modal_dest_04" data-uk-modal class="info">Learn More</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 text-center">
+                           <h2 class="dest-title font-size-100">Hotel Marina El Cid Spa &amp; Beach Resort</h2>
+                           <h3>cancun - riviera maya</h3>
+                           <div class="view view-first">
+                              <img src="img/dest_05.jpg" />
+                              <div class="mask">
+                                 <a href="reserva00.html" class="info">Book now</a>
+                                 </br>
+                                 <a href="#modal_dest_05" data-uk-modal class="info">Learn More</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 text-center">
+                           <h2 class="dest-title">El Cid La Ceiba Beach</h2>
+                           <h3>Cozumel</h3>
+                           <div class="view view-first">
+                              <img src="img/dest_06.jpg" />
+                              <div class="mask">
+                                 <a href="reserva00.html" class="info">Book now</a>
+                                 </br>
+                                 <a href="#modal_dest_06" data-uk-modal class="info">Learn More</a>
+                              </div>
+                           </div>
+                        </div>
+<div class="clear hidden-sm hidden-xs"></div>
+<div class="col-md-12 text-center">
+                              <h2 class="dest-title">Cruise Club</h2>
+                              <div class="view view-first">
+                                 <img src="img/dest_07.jpg" />
+                                 <div class="mask">
+                                    <a href="#modal_dest_07" data-uk-modal class="info">Learn More</a>
+                                    </br>
+                                 </div>
+                              </div>
+                           </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+            <div id="cuenta" class="row back-cuenta">
+               <div class="Slide">
+                  <h1 class="padding-x40">Membership</h1>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="panel-group" id="panel-733600">
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <a class="panel-title" data-toggle="collapse" data-parent="#panel-01" href="#panel-element-01">general information</a>
+                              </div>
+                              <div id="panel-element-01" class="panel-collapse collapse in">
+                                 <div class="panel-body">
+                                    <div class="col-sm-4">
+                                       <h3>Membership</h3>
+                                       <fieldset>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Type:</div>
+                                             <div class="col-md-8 form-result">Plus</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Member since:</div>
+                                             <div class="col-md-8 form-result">12/23/2004</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Expiration date:</div>
+                                             <div class="col-md-8 form-result">31/03/2022</div>
+                                          </div>
+                                       </fieldset>
+                                       <fieldset>
+                                          <h3>Members</h3>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Russel Ediger</div>
+                                             <div class="col-md-8 form-result">Owner</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Russel Mary Jane</div>
+                                             <div class="col-md-8 form-result">Owner</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Stewart John</div>
+                                             <div class="col-md-8 form-result">Joint</div>
+                                          </div>
+                                       </fieldset>
+                                    </div>
+                                    <div class="col-sm-4">
+                                       <h3>Addres</h3>
+                                       <fieldset>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Street</div>
+                                             <div class="col-md-8 form-result">5030 West sourwood place</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Zip:</div>
+                                             <div class="col-md-8 form-result">57107</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >City:</div>
+                                             <div class="col-md-8 form-result">Fioux Falls</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >State:</div>
+                                             <div class="col-md-8 form-result">South Dakota</div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >&nbsp;</div>
+                                             <div class="col-md-8 form-result">United States</div>
+                                          </div>
+                                       </fieldset>
+                                    </div>
+                                    <div class="col-sm-4">
+                                       <h3>Contact info</h3>
+                                       <fieldset>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Phone:</div>
+                                             <div class="col-md-8 form-result">6057575757<br><span id="phone_tyoe">(home)</span></div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Email:</div>
+                                             <div class="col-md-8 form-result">russjunan@hotmail.com<br><span id="email_owner_1">(Russel Eideger)</span></div>
+                                          </div>
+                                          <div class="form-group">
+                                             <div class="label-md form-label col-md-4" >Email:</div>
+                                             <div class="col-md-8 form-result">test@test.com<br><span id="email_owner_2">(Russel Mary Jane)</span></div>
+                                          </div>
+                                       </fieldset>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-xs-12 margin-x20">
+                                          <p class="txt-bold">We are plased to provide you with an online version of our ECVC Member Directory where you will find updated information regarding your membership and vailable benefits .</p>
+                                          <a href="#">
+                                             <div class="black-button">Download PDF</div>
+                                          </a>
+                                       </div>
+                                       <div class="col-xs-12 margin-x20">
+                                          <p class="txt-bold">If you want to change your membership information please contact our service center.</p>
+                                       </div>
+                                       <div class="col-xs-12 margin-x20">
+                                          <p class="txt-bold">If you want to change your your password please <a href="change_password.html">click here</a>.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <a class="panel-title" data-toggle="collapse" data-parent="#panel-02" href="#panel-element-02">Points inquiry</a>
+                              </div>
+                              <div id="panel-element-02" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <form class="form-inline">
+                                       <p class="bold">Annual points: <span>77000</span></p>
+                                       <hr>
+                                       <table class="table table-hover">
+                                          <thead>
+                                             <tr>
+                                                <th>YEAR</th>
+                                                <th class="hidden-md hidden-lg">DATES</th>
+                                                <th class="hidden-xs hidden-sm">EFFECTIVE DATE</th>
+                                                <th class="hidden-xs hidden-sm">EXPIRATION DATE</th>
+                                                <th>USAGE</th>
+                                                <th class="hidden-xs hidden-sm">OTHER MOVEMENTS</th>
+                                                <th>CURRENT POINTS BALANCE</th>
+                                                <th>DETAILS</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <th scope="row">2015</th>
+                                                <td class="hidden-md hidden-lg">
+                                                   <p>Effective:<br />
+                                                      10/01/2015
+                                                   </p>
+                                                   <p>Expiration:<br />
+                                                      09/30/2016
+                                                   </p>
+                                                </td>
+                                                <td class="hidden-xs hidden-sm">10/01/2015</td>
+                                                <td class="hidden-xs hidden-sm">9/30/2016</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>77000</td>
+                                                <td><a href="#modal_points_inquiry" data-uk-modal>Details</a></td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">2015</th>
+                                                <td class="hidden-md hidden-lg">
+                                                   <p>Effective:<br />
+                                                      10/01/2015
+                                                   </p>
+                                                   <p>Expiration:<br />
+                                                      09/30/2016
+                                                   </p>
+                                                </td>
+                                                <td class="hidden-xs hidden-sm">10/01/2015</td>
+                                                <td class="hidden-xs hidden-sm">9/30/2016</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>77000</td>
+                                                <td><a href="#modal_points_inquiry" data-uk-modal>Details</a></td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">2015</th>
+                                                <td class="hidden-md hidden-lg">
+                                                   <p>Effective:<br />
+                                                      10/01/2015
+                                                   </p>
+                                                   <p>Expiration:<br />
+                                                      09/30/2016
+                                                   </p>
+                                                </td>
+                                                <td class="hidden-xs hidden-sm">10/01/2015</td>
+                                                <td class="hidden-xs hidden-sm">9/30/2016</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>77000</td>
+                                                <td><a href="#modal_points_inquiry" data-uk-modal>Details</a></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <a class="panel-title" data-toggle="collapse" data-parent="#panel-04" href="#panel-element-04">my reservations</a>
+                              </div>
+                              <div id="panel-element-04" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <ul class="nav nav-tabs">
+                                       <li class="active"><a data-toggle="tab" href="#home">Reservations</a></li>
+                                       <li><a data-toggle="tab" href="#menu1">World Wide Exchange</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                       <div id="home" class="tab-pane fade in active">
+                                          <table class="table table-hover">
+                                             <thead>
+                                                <tr>
+                                                   <th>RESORT</th>
+                                                   <th class="hidden-sm hidden-md hidden-lg">CONF. NUMBER</th>
+                                                   <th class="hidden-xs">CONFIRMATION NUMBER</th>
+                                                   <th>DATES</th>
+                                                   <th class="hidden-sm hidden-md hidden-lg">NGT</th>
+                                                   <th class="hidden-xs">NIGHTS</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <th scope="row">
+                                                      El Cid Granada Country<br>
+                                                      <hr>
+                                                      <a href="">Download confirmation letter <img class="icon" src="img/icon_PDF.png" width="15px"></a>
+                                                   </th>
+                                                   <td>86506</td>
+                                                   <td>
+                                                      <p>Arrival:<br />09/30/2016</p>
+                                                      <p>Departure:<br />10/10/2016</p>
+                                                   </td>
+                                                   <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                   <th scope="row">
+                                                      El Cid Granada Country<br>
+                                                      <hr>
+                                                      <a href="">Download confirmation letter <img class="icon" src="img/icon_PDF.png" width="15px"></a>
+                                                   </th>
+                                                   <td>86506</td>
+                                                   <td>
+                                                      <p>Arrival:<br />
+                                                         09/30/2016
+                                                      </p>
+                                                      <p>Departure:<br />
+                                                         10/10/2016
+                                                      </p>
+                                                   </td>
+                                                   <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                   <th scope="row">
+                                                      El Cid Granada Country<br>
+                                                      <hr>
+                                                      <a href="">Download confirmation letter <img class="icon" src="img/icon_PDF.png" width="15px"></a>
+                                                   </th>
+                                                   <td>86506</td>
+                                                   <td>
+                                                      <p>Arrival:<br />
+                                                         09/30/2016
+                                                      </p>
+                                                      <p>Departure:<br />
+                                                         10/10/2016
+                                                      </p>
+                                                   </td>
+                                                   <td>7</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div id="menu1" class="tab-pane fade">
+                                          <h3>World Wide Exchange</h3>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra dictum placerat. In libero arcu, ullamcorper eget bibendum vitae, maximus non est. Sed consequat tincidunt mi volutpat blandit. In hac habitasse platea dictumst. Etiam accumsan blandit est, quis consequat justo tempus ac. Nunc in pretium massa. Vivamus dignissim, lectus ut suscipit iaculis, sem ipsum tempus velit, sed aliquet sem elit quis velit. Duis at luctus ante. Aliquam consectetur diam sed augue malesuada volutpat. Morbi bibendum, nibh vitae dapibus bibendum, mi enim aliquam elit, ac pellentesque metus diam et nisl. Suspendisse potenti. Quisque et arcu vel tortor mattis aliquam id vitae ex. In consectetur lacinia mauris ac pharetra. Curabitur pulvinar est sit amet justo malesuada aliquet. Morbi ante ligula, mollis ultrices elit sed, ultricies tempus lectus. </p>
+                                          <a href="#">
+                                             <div class="black-button">Search and book on RCI</div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="maintenance_fee" class="panel panel-default">
+                              <div class="panel-heading">
+                                 <a class="panel-title" data-toggle="collapse" data-parent="#panel-05" href="#panel-element-05">maintenance</a>
+                              </div>
+                              <div id="panel-element-05" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <table class="table table-hover">
+                                       <thead>
+                                          <tr>
+                                             <th>CONCEPT</th>
+                                             <th class="hidden-xs">CHARGE</th>
+                                             <th class="hidden-xs hidden-sm">PAID</th>
+                                             <th>TO PAY</th>
+                                             <th class="hidden-xs hidden-sm">BALANCE</th>
+                                             <th>DUE DATE</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <th scope="row">Maintenance fee 2015</th>
+                                             <td class="hidden-xs">$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$0.00</td>
+                                             <td>$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$218.58</td>
+                                             <td>5/15/2016</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">Maintenance fee 2014</th>
+                                             <td class="hidden-xs">$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$0.00</td>
+                                             <td>$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$218.58</td>
+                                             <td>5/15/2016</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">Maintenance fee 2013</th>
+                                             <td class="hidden-xs">$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$0.00</td>
+                                             <td>$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$218.58</td>
+                                             <td>5/15/2016</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">Maintenance fee 2012</th>
+                                             <td class="hidden-xs">$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$0.00</td>
+                                             <td>$218.58</td>
+                                             <td class="hidden-xs hidden-sm">$218.58</td>
+                                             <td>5/15/2016</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <hr>
+                                    <div class="row">
+                                       <div class="col-xs-12">
+                                          <p class="txt-bold">Total debt: $500.00</p>
+                                       </div>
+                                       <div class="form-group">
+                                          <label for="buttondropdown" class="col-md-2 control-label">Ammount to pay:</label>
+                                          <div class="col-md-3">
+                                             <div class="input-group">
+                                                <input type="number" placeholder="0000.00" class="form-control" >
+                                                <div class="input-group-btn">
+                                                   <button class="btn btn-default" type="button">
+                                                   Pay
+                                                   </button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-xs-12 margin-x20">
+                                          <p class="txt-bold">Ammount expressed in USD.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+            <div id="promociones" class="row">
+               <div>
+                  <h1 class="padding-x40">promotions</h1>
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="view view-third">
+                           <img src="img/promos.jpg" />
+                           <div class="mask">
+                              <h2>CANCUN - RIVIERA MAYA</h2>
+                              <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                              <a href="#modal_promo_01" data-uk-modal class="info">Read More</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="view view-third">
+                           <img src="img/promos.jpg" />
+                           <div class="mask">
+                              <h2>CANCUN - RIVIERA MAYA</h2>
+                              <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                              <a href="#modal_promo_02" data-uk-modal class="info">Read More</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="margin-x20">&nbsp;</div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+            <div id="contacto" class="row">
+               <div class="Slide">
+                  <h1 class="padding-x40">contact</h1>
+                  <span class="help-block text-center">If you have any comments or suggestions or would like more information about our services, please let us know.</span>
+                  <br>
+                  <form class="form-horizontal text-left">
+                     <fieldset>
+                        <!-- Text input-->
+                        <div class="form-group">
+                           <label class="col-md-4 control-label" for="textinput">Type: </label>
+                           <div class="col-md-4">
+                              <select class="selectpicker">
+                                 <option>Select</option>
+                                 <option>Option 1</option>
+                                 <option>Option 2</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label" for="textinput">Comments: </label>
+                           <div class="col-md-4">
+                              <textarea class="form-control" id="textarea" name="textarea">Your comments</textarea>
+                           </div>
+                        </div>
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                           <div class="col-md-8 text-right">
+                              <button class="btn btn-gold" type="button">Send</button>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </form>
+                  <p>As a value member we encourage you to contact our netsork to receive information about using your membership and make reservations.</p>
+                  <p>Monday to friday from 9 am to 8 pm (CT) and saturday from 9 am to 6 pm (CT)</p>
+                  <p>From USA: 1-866-552-7320<br>
+                     From Mexico: 1-800-523-4491<br>
+                     From Canada: 1-866-611-1402<br>
+                     Direct line: +52 (55) 9138-9261
+                  </p>
+                  <a href="#modal_faq" data-uk-modal>
+                     <div class="black-button">FAQ
+                     </div>
+                  </a>
+                  <div class="clear"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MODALS -->
+      <!--- destino 01--->
+      <div id="modal_dest_01" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">EL CID CASTILLA BEACH</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}" >
+                  <ul class="uk-slideshow" data-uk-check-display>
+                     <li><img src="img/modal_slideshow/dest_1/01.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/02.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/03.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/04.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/05.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/06.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/07.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/08.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/09.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/10.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/11.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/12.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/13.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/14.jpg"> </li>
+                     <li><img src="img/modal_slideshow/dest_1/15.jpg"> </li>
+                  </ul>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+               </div>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- destino 02 --->
+      <div id="modal_dest_02" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">EL CID EL MORO BEACH</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}" >
+                  <ul class="uk-slideshow" data-uk-check-display>
+                     <li><img src="img/modal_slideshow/dest_2/01.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/02.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/03.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/04.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/05.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/06.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/07.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/08.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/09.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_2/10.png"> </li>
+                  </ul>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+               </div>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- destino 03 --->
+      <div id="modal_dest_03" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">EL CID MARINA BEACH</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}" >
+                  <ul class="uk-slideshow" data-uk-check-display>
+                     <li><img src="img/modal_slideshow/dest_3/01.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/02.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/03.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/04.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/05.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/06.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/07.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/08.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/09.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_3/10.png"> </li>
+                  </ul>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+               </div>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- destino 04 --->
+      <div id="modal_dest_04" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">EL CID GRANADA COUNTRY CLUB</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}" >
+                  <ul class="uk-slideshow" data-uk-check-display>
+                     <li><img src="img/modal_slideshow/dest_4/01.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/02.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/03.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/04.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/05.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/06.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/07.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/08.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/09.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_4/10.png"> </li>
+                  </ul>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+               </div>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- destino 05 --->
+      <div id="modal_dest_05" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">HOTEL MARINA EL CID SPA &amp; BEACH RESORT</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}" >
+                  <ul class="uk-slideshow" data-uk-check-display>
+                     <li><img src="img/modal_slideshow/dest_5/01.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/02.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/03.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/04.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/05.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/06.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/07.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/08.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_5/09.png"> </li>
+                  </ul>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+               </div>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- destino 06 --->
+      <div id="modal_dest_06" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">EL CID LA CEIBA BEACH</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true}" >
+                  <ul class="uk-slideshow" data-uk-check-display>
+                     <li><img src="img/modal_slideshow/dest_6/01.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_6/02.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_6/03.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_6/04.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_6/05.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_6/06.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_6/07.png"> </li>
+                     <li><img src="img/modal_slideshow/dest_6/08.png"> </li>
+                  </ul>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                  <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+               </div>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- promo 01 --->
+      <div id="modal_promo_01" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">CANCUN - RIVIERA MAYA</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- promo 02 --->
+      <div id="modal_promo_02" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">CANCUN - RIVIERA MAYA</h1>
+            <div class="modal-body">
+               <p>Begin your escape along the soft sand beaches that frame this fabulous resort. Located in the city’s fabled Golden Zone, El Cid Castilla Beach also puts you close to authentic Mexican history and culture that reaches back to the 16th century. There’s much more to the resort than beautiful sandy beaches. Indulge in a wide range of watersports and outdoor adventures for the whole family. And what’s a vacation getaway without some me-time?  To help you out, El Cid offers free babysitting as well as a fun, active Kids Club for children 4-12 and a Teens Club for ages 13-17.  Each day is a chance to relax at the beach, shop our boutiques and enjoy a relaxing meal with friends. Fill your evenings with live nightly entertainment or venture into town for some local flavor.  Why not start your own traditions at this sundrenched vacation paradise?</p>
+               <ul>
+                  <li>Eight restaurants located at El Cid properties and room service</li>
+                  <li>El Cid’s Kids Club for ages 4-12 (From 10 am &ndash; 10 pm)&nbsp;&nbsp;</li>
+                  <li>El Cid’s Teens Club for ages 13-17 (From 11 am &ndash; 9 pm)</li>
+                  <li>Live entertainment nightly</li>
+                  <li>WiFi Internet access (Daily and weekly rates)</li>
+                  <li>El Cid Shopping Plaza</li>
+                  <li>Shuttle service to four El Cid Resorts &amp; Country Club every 10 minutes</li>
+                  <li>Free parking and valet services</li>
+                  <li>Concierge / customer service</li>
+                  <li>Business Center</li>
+                  <li>Meeting facilities</li>
+                  <li>Medical services on site</li>
+                  <li>Laundry / dry cleaning</li>
+                  <li>Massage and body treatments at El Cid Golf &amp; Country Club</li>
+                  <li>Two connecting free-form pools</li>
+                  <li>Daily pool and beach activities</li>
+                  <li>Aqua Sports on site (One hour of non-motorized water sports free to All-Inclusive guests</li>
+                  <li>24-hour currency exchange</li>
+                  <li>ATM machine</li>
+                  <li>Car rental</li>
+                  <li>Horseback riding nearby</li>
+                  <li>Easy access to facilities at neighboring El Cid El Moro and Granada hotels</li>
+                  <li><a href="/mazatlan/mazatlan-tours">Pronatours</a> tour desk on site</li>
+                  <li>Sports fishing aboard the Aries Fleet, departing from El Cid Marina daily</li>
+                  <li>Bay cruise, Deer Island Tour and Stone Island Tours departing daily from El Cid Marina</li>
+                  <li>Babysitting services available upon request</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--- FAQ --->
+      <div id="modal_faq" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="modal-body text-left">
+               <div class="panel-group" id="panel-faq">
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <a class="" data-toggle="collapse" data-parent="#panel-faq" href="#faq-panel-01"><span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum, enim a vehicula congue, leo metus rhoncus magna, at accumsan ex sem ut libero?</span></a>
+                     </div>
+                     <div id="faq-panel-01" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum, enim a vehicula congue, leo metus rhoncus magna, at accumsan ex sem ut libero. Sed fringilla auctor orci sit amet sollicitudin. Suspendisse varius mauris quis elementum auctor. Cras maximus nunc sit amet mauris facilisis, in lobortis quam pretium. Sed vel convallis turpis. Donec iaculis arcu nec interdum mollis. Nunc ligula tellus, consectetur a porta in, volutpat vitae erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam porta leo in finibus interdum.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <a class="" data-toggle="collapse" data-parent="#panel-faq" href="#faq-panel-02"><span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum, enim a vehicula congue, leo metus rhoncus magna, at accumsan ex sem ut libero?</span></a>
+                     </div>
+                     <div id="faq-panel-02" class="panel-collapse collapse">
+                        <div class="panel-body">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum, enim a vehicula congue, leo metus rhoncus magna, at accumsan ex sem ut libero. Sed fringilla auctor orci sit amet sollicitudin. Suspendisse varius mauris quis elementum auctor. Cras maximus nunc sit amet mauris facilisis, in lobortis quam pretium. Sed vel convallis turpis. Donec iaculis arcu nec interdum mollis. Nunc ligula tellus, consectetur a porta in, volutpat vitae erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam porta leo in finibus interdum.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <a class="" data-toggle="collapse" data-parent="#panel-faq" href="#faq-panel-03"><span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum, enim a vehicula congue, leo metus rhoncus magna, at accumsan ex sem ut libero?</span></a>
+                     </div>
+                     <div id="faq-panel-03" class="panel-collapse collapse">
+                        <div class="panel-body">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum, enim a vehicula congue, leo metus rhoncus magna, at accumsan ex sem ut libero. Sed fringilla auctor orci sit amet sollicitudin. Suspendisse varius mauris quis elementum auctor. Cras maximus nunc sit amet mauris facilisis, in lobortis quam pretium. Sed vel convallis turpis. Donec iaculis arcu nec interdum mollis. Nunc ligula tellus, consectetur a porta in, volutpat vitae erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam porta leo in finibus interdum.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--- points inquiry details --->
+      <div id="modal_points_inquiry" class="uk-modal">
+         <div class="uk-modal-dialog text-center">
+            <a class="uk-modal-close uk-close"></a>
+            <h1 class="padding-x40 ">POINTS INQUIRY</h1>
+            <div class="modal-body">
+               <table class="table table-hover">
+                  <thead>
+                     <tr>
+                        <th>TRANSACTION DATE</th>
+                        <th class="hidden-xs hidden-sm">TRANSACTION TYPE</th>
+                        <th class="hidden-xs">TRANSACTION CODE</th>
+                        <th class="hidden-xs">POINTS</th>
+                        <th class="hidden-xs hidden-sm">REF YEAR</th>
+                        <th>RESERVATION NO.</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row">07/01/2013</th>
+                        <td class="hidden-xs hidden-sm">Allotment</td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs">77000</td>
+                        <td class="hidden-xs hidden-sm">2014</td>
+                        <td>78656</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">07/01/2013</th>
+                        <td class="hidden-xs hidden-sm">Allotment</td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs">77000</td>
+                        <td class="hidden-xs hidden-sm">2014</td>
+                        <td>78656</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">07/01/2013</th>
+                        <td class="hidden-xs hidden-sm">Allotment</td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs">77000</td>
+                        <td class="hidden-xs hidden-sm">2014</td>
+                        <td>78656</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/modernizr.custom.js"></script>
+      <script src="js/uikit.min.js"></script>
+      <script src="js/components/slideshow.js"></script>
+      <script src="js/components/datepicker.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="js/wow.min.js"></script>
+
+      <script>
+         new WOW().init();
+      </script>
+      <script src="js/grid.js"></script>
+      <script>
+         $(function() {
+             Grid.init();
+         });
+      </script>
+      <script src="js/smooth-scroll.js"></script>
+      <script>
+         smoothScroll.init();
+      </script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script>
+         $(document).ready(function () {
+           $('.selectpicker').selectpicker();
+         });
+      </script>
+      <script src="js/float-panel.js"></script>
+      <script>
+         /* Open when someone clicks on the span element */
+         function openNav() {
+         document.getElementById("search-availability").style.width = "100%";
+         }
+
+         /* Close when someone clicks on the "x" symbol inside the overlay */
+         function closeNav() {
+         document.getElementById("search-availability").style.width = "0%";
+         }
+      </script>
+      <script>
+         /* Open when someone clicks on the span element */
+         function openNav1() {
+         document.getElementById("menu-1").style.width = "100%";
+         }
+
+         /* Close when someone clicks on the "x" symbol inside the overlay */
+         function closeNav1() {
+         document.getElementById("menu-1").style.width = "0%";
+         }
+      </script>
+      <script>
+         $(window).scroll(function() {
+
+         if ($(this).scrollTop()>400)
+         {
+          $('.prueba').fadeIn();
+         }
+         else
+         {
+         $('.prueba').fadeOut();
+         }
+         });
+      </script>
+      <script>
+         $(window).scroll(function() {
+
+         if ($(this).scrollTop()>400)
+         {
+          $('.menu-top').fadeIn();
+         }
+         else
+         {
+         $('.menu-top').fadeOut();
+         }
+         });
+      </script>
+      <script>$(function() { var logo = $(".lrg-logo"); $(window).scroll(function() {
+         var scroll = $(window).scrollTop();
+
+             if (scroll >= 500) {
+               if(!logo.hasClass("sml-logo")) {
+                 logo.hide();
+                 logo.removeClass('lrg-logo').addClass("sml-logo").fadeIn( "slow");
+               }
+             } else {
+               if(!logo.hasClass("lrg-logo")) {
+                 logo.hide();
+                 logo.removeClass("sml-logo").addClass('lrg-logo').fadeIn( "slow");
+               }
+             }
+
+         });
+         });
+      </script>
+<script>$(function() { var logo = $(".show2"); $(window).scroll(function() {
+         var scroll = $(window).scrollTop();
+
+             if (scroll >= 400) {
+               if(!logo.hasClass("hide2")) {
+                 logo.hide();
+                 logo.removeClass('show2').addClass("hide2").fadeIn( "slow");
+               }
+             } else {
+               if(!logo.hasClass("show2")) {
+                 logo.hide();
+                 logo.removeClass("hide2").addClass('show2').fadeIn( "slow");
+               }
+             }
+
+         });
+         });
+      </script>
+<script>$(function() { var logo = $(".white-back2"); $(window).scroll(function() {
+         var scroll = $(window).scrollTop();
+
+             if (scroll >= 400) {
+               if(!logo.hasClass("black-back")) {
+                 logo.hide();
+                 logo.removeClass('white-back2').addClass("black-back").fadeIn("slow");
+               }
+             } else {
+               if(!logo.hasClass("white-back2")) {
+                 logo.hide();
+                 logo.removeClass("black-back").addClass('white-back2').fadeIn("slow");
+               }
+             }
+
+         });
+         });
+      </script>
+<script>$(function() { var logo = $(".txt-grey"); $(window).scroll(function() {
+         var scroll = $(window).scrollTop();
+
+             if (scroll >= 400) {
+               if(!logo.hasClass("txt-white")) {
+                 logo.hide();
+                 logo.removeClass('txt-grey').addClass("txt-white").fadeIn("slow");
+               }
+             } else {
+               if(!logo.hasClass("txt-grey")) {
+                 logo.hide();
+                 logo.removeClass("txt-white").addClass('txt-grey').fadeIn("slow");
+               }
+             }
+
+         });
+         });
+      </script>
+
+
+   </body>
+</html>
